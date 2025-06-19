@@ -21,7 +21,7 @@ jobs:
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_gh_token: ${{ secrets.GITHUB_TOKEN }}
           source_repo_path: Rey093/sample_template
           upstream_branch: develop # defaults to main
           pr_branch_name_prefix: chore(template-sync)
